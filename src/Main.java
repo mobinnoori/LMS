@@ -8,7 +8,6 @@ public class Main {
     private static int bookCount = 0;                                   // Counter to track the number of books
     // Static variable to auto-increment book ID
     public static int nextID = 1;
-    private static String currentUser = "";
     private static boolean isAdmin = false;
 
     private static int userCount = 0; // Counter to track the number of registered users
@@ -70,7 +69,6 @@ public class Main {
             System.out.println("You are logged in as Admin.");
             isAdmin = true;
         }
-        currentUser = loggedInUserEmail;
         return isLogin;
     }
 
@@ -123,7 +121,6 @@ public class Main {
             System.out.println("Press 1 for Signup");
             System.out.println("Press 2 for Login");
             System.out.println("Press 3 for exiting");
-            String loggedInEmail = "";
             int choice = scanner.nextInt();
             scanner.nextLine();
 
@@ -495,7 +492,7 @@ public class Main {
                     books[bookCount - 1] = new String[4];
 
                     bookCount--;
-                    System.out.println("Book with ID " + ID + "has been removed.");
+                    System.out.println("Book with ID " + ID + " has been removed.");
                     break;
                 }
             }
