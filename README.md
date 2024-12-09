@@ -1,2 +1,2 @@
 # LMS
-## This is a library management system
+## This is a library management systems
